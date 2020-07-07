@@ -7,8 +7,8 @@ var colors = [
     "rgb(255, 0, 255)"
 ];
 
-var squares = document.querySelectorAll(".squares");
+var squares = document.querySelectorAll(".square");
 
-for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < squares.length; i++) {
     squares[i].style.backgroundColor = colors[i];
 }
