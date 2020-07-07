@@ -349,3 +349,26 @@ var tag = document.querySelector("p");
 tag.innerHTML
 //"This is an <strong>awesome</strong> paragraph"
 ```
+
+## 3.3 Attributes
+
+### 3.3.1 getAttribute and setAttribute()
+
+Use getAttribute and setAttribute() to read and write attributes like `src` or `href`
+
+```html
+<a href="www.google.com">I am a link</a>
+<img src="logo.png">
+```
+```js
+var link = document.querySelector("a");
+link.getAttribute("href");  //"www.google.com"
+//CHANGE HREF ATTRIBUTE
+link.setAttribute("href","www.dogs.com"); 
+///<a href="www.dogs.com">I am a link</a>
+
+//TO CHANGE THE IMAGE SRC
+var img = document.querySelector("img");
+img.setAttribute("src", "corgi.png");
+//<img src="corgi.png">
+```
