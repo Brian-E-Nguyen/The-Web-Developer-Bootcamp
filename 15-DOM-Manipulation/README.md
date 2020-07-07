@@ -242,7 +242,7 @@ var tag = document.querySelector(".bolded");
 </body>
 ```
 
-## 3. Manipulating Style
+## 3. Manipulating
 
 ### 3.1 Style
 
@@ -308,4 +308,44 @@ tag.classList.remove("another-class");
 //TOGGLE A CLASS
 tag.classList.toggle("another-class");
 
+```
+
+## 3.2 Manipulating Text and Content
+
+### 3.2.1 textContent
+
+Returns a string of all the text contained in a given elements
+
+```html
+<p>
+  This is an <strong>awesome</strong> paragraph 
+</p>
+```
+```js
+// Select the <p> tag:
+var tag = document.querySelector("p");
+
+//Retrieve the textContent:
+tag.textContent //"This is an awesome paragraph"
+
+//alter the textContent:
+tag.textContent = "blah blah blah";
+```
+
+### 3.2.2 innerHTML
+
+Similar to textContent, except it returns a string of all the HTML contained in a given element
+
+```html
+<p>
+  This is an <strong>awesome</strong> paragraph 
+</p>
+```
+
+```js
+//Select the <p> tag:
+var tag = document.querySelector("p");
+
+tag.innerHTML
+//"This is an <strong>awesome</strong> paragraph"
 ```
