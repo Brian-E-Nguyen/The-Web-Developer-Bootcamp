@@ -42,3 +42,21 @@ It comes with many useful methods to things like:
 ### 2.3 The Final Draw
 
 Either way, it's worth knowing. It helps to understand the DOM more
+
+## 3. Adding jQuery
+
+Download jQuery and link it locally:
+
+```html
+<script type="text/javascript" src="jquery.js"></script>
+```
+
+OR
+
+Link to a CDN, which is found on this website: https://code.jquery.com/
+```html
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+```
