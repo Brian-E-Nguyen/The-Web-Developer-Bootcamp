@@ -123,3 +123,21 @@ $("li").css({
     backgroundColor: "rgba(89, 45, 20, 0.5a)"
 })
 ```
+
+## 5. Text and HTML
+
+### 5.1 .text()
+
+`Get the combined text contents of each element in the set of matched elements, including their descendants, or set the text contents of the matched elements.`
+
+It's the same as JavaScript's `.textContent`
+
+```js
+$("h1").text();
+```
+
+### 5.2 .html()
+
+`Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element`
+
+Similar to `.innerHTML`, in that it retrieves the HTML tags and the text content
