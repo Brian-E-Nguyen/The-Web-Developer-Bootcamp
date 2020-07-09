@@ -15,3 +15,30 @@ It comes with many useful methods to things like:
 - Animate elements
 - Add effects
 - Make HTTP requests (AJAX)
+
+## 2. Why Use jQuery? Why You Might Not Use jQuery?
+
+### 2.1 Why You Should
+
+- Fixes "broken" DOM API
+- Brevity and clarity
+    - clear and shorter code
+- Ease of use
+- Cross-browser support
+- AJAX
+- Used by many
+    - strong community
+    - many tutorials and blogs
+
+### 2.2 Why You Shouldn't?
+
+- The DOM API is no longer "broken"
+    - before, methods like `querySelect()` didn't use to exist, but now it does
+- It doesn't do anything you can't do on your own
+- It's an unnecessary dependency
+- Performance
+- Lots of people are moving away from jQuery
+
+### 2.3 The Final Draw
+
+Either way, it's worth knowing. It helps to understand the DOM more
