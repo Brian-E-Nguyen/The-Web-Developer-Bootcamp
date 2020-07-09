@@ -116,4 +116,10 @@ We can also style multiple elements at once
 ```js
 // Select all li's and make them yellow
 $("li").css("color", "yellow");
+
+$("li").css({
+    fontSize: "10px",
+    border: "3px dashed purple",
+    backgroundColor: "rgba(89, 45, 20, 0.5a)"
+})
 ```
