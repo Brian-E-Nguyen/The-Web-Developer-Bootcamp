@@ -60,3 +60,60 @@ Link to a CDN, which is found on this website: https://code.jquery.com/
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>
 ```
+
+## 4. jQuery Selectors
+
+### 4.1 Objectives
+
+- Select elements with $()
+- Use .css() to style elements
+
+### 4.2 Selecting with jQuery
+
+`$("selectorGoesHere")`
+
+Selecting with jQuery is very similar to `querySelectorAll`, in that we provide a CSS style selector and jQuery will return all matching elements
+
+```js
+// Select all img tags
+$("img")
+
+// Select all elements with class "sale"
+$(".sale")
+
+// Select all elements with id "bonus"
+$("#bonus")
+
+// Select all a tags inside of li's
+$("li a")
+```
+
+### 4.3 Manipulating Style with jQuery
+
+The .css() method is jQuery's interface to styling
+
+```
+$(selector)
+
+css(property, value)
+```
+
+```js
+// Select element with id "special" and give it a border
+$("#special").css("border", "2px solid red");
+
+// We can also pass in an object with style
+var styles = {
+    backgroundColor: "pink",
+    fontWeight: "bold"
+};
+
+$("#special").css(styles);
+```
+
+We can also style multiple elements at once 
+
+```js
+// Select all li's and make them yellow
+$("li").css("color", "yellow");
+```
