@@ -141,3 +141,58 @@ $("h1").text();
 `Get the HTML contents of the first element in the set of matched elements or set the HTML contents of every matched element`
 
 Similar to `.innerHTML`, in that it retrieves the HTML tags and the text content
+
+## 6. Attr and Val
+
+### 6.1 .attr()
+
+`Get the value of an attribute for the first element in the set of matched elements or set one or more attributes for every matched element.`
+
+We can retrieve an attribute or we can set an attribute. Same concept as getters and setters
+
+```html
+<img id="greatphoto" src="brush-seller.jpg" alt="brush seller">
+```
+
+To change the `alt` attribute, simply pass the name of the attribute and its new value to the `.attr()` method:
+
+```js
+$( "#greatphoto" ).attr( "alt", "Beijing Brush Seller" );
+```
+
+```js
+$( "#greatphoto" ).attr({
+  alt: "Beijing Brush Seller",
+  title: "photo by Kelly Clark"
+});
+```
+
+### 6.2 .val()
+
+`Get the current value of the first element in the set of matched elements or set the value of every matched element.`
+
+```js
+// Get the value from the selected option in a dropdown
+$( "select#foo option:checked" ).val();
+ 
+// Get the value from a dropdown select directly
+$( "select#foo" ).val();
+ 
+// Get the value from a checked checkbox
+$( "input[type=checkbox][name=bar]:checked" ).val();
+ 
+// Get the value from a set of radio buttons
+$( "input[type=radio][name=baz]:checked" ).val();
+```
+
+![img1](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/18-Intro-to-jQuery/18-Intro-to-jQuery/images-for-notes/img1.jpg?raw=true)
+
+You can also pass something into this method.
+
+![img2](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/18-Intro-to-jQuery/18-Intro-to-jQuery/images-for-notes/img2.jpg?raw=true)
+
+...which then updates the value.
+
+![img3](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/18-Intro-to-jQuery/18-Intro-to-jQuery/images-for-notes/img3.jpg?raw=true)
+
+One practical use of this is when someone enters in the input, you would then use `val()` to clear the input
