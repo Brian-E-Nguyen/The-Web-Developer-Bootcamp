@@ -67,3 +67,38 @@ In most cases, `click()` and `on('click')` will both get the job done.  HOWEVER,
 - `click()` only adds listeners for existing elements
 - `on()` will add listeners for all potential future elements
 - This will all make sense in the next video!
+
+## 2. jQuery Effects
+
+Some common ones
+
+### 2.1 Fading: fadeIn(), fadeOut(), fadeToggle()
+
+```js
+$('button').on('click', function() {
+    $('div').fadeOut(5000, function() {
+        console.log("Fade completed!");
+        $(this).remove();
+    });
+})
+```
+![img4](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/19-Advanced-jQuery/19-Advanced-jQuery/images-for-notes/img4.jpg?raw=true)
+
+![img6](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/19-Advanced-jQuery/19-Advanced-jQuery/images-for-notes/img6.jpg?raw=true)
+
+![img5](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/19-Advanced-jQuery/19-Advanced-jQuery/images-for-notes/img5.jpg?raw=true)
+
+### 2.2 Sliding: slideUp(), slideDown(), slideToggle()
+
+```js
+$('button').on('click', function() {
+    $('div').slideDown(5000);
+})
+```
+
+![img5](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/19-Advanced-jQuery/19-Advanced-jQuery/images-for-notes/img5.jpg?raw=true)
+
+![img7](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/19-Advanced-jQuery/19-Advanced-jQuery/images-for-notes/img7.jpg?raw=true)
+
+![img4](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/19-Advanced-jQuery/19-Advanced-jQuery/images-for-notes/img4.jpg?raw=true)
+
