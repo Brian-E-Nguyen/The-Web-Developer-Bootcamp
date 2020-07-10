@@ -27,4 +27,17 @@ $('button').click(function() {
     $(this).css('background', 'pink')
 });
 ```
+![img](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/19-Advanced-jQuery/19-Advanced-jQuery/images-for-notes/img1.jpg?raw=true)
 
+### 1.2 keyPress()
+
+jQuery's `keypress()` method is a quick and easy way to add a keypress listener to element(s)
+
+```js
+//listen for any keypress in any text input
+$('input[type="text"]').keypress(function(){
+  alert("text input keypress!");
+});
+```
+
+![img2](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/19-Advanced-jQuery/19-Advanced-jQuery/images-for-notes/img2.jpg?raw=true)
