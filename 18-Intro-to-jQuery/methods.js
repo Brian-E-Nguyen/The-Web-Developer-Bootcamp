@@ -20,3 +20,8 @@ $("img:first-of-type").attr("src", "https://external-content.duckduckgo.com/iu/?
 $("img").last().attr('src', "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Ff%2Ff7%2FPomeranianhenna.jpg%2F220px-Pomeranianhenna.jpg&f=1&nofb=1");
 
 $('input').val();
+
+// Manipulating classes
+
+$('h1').addClass('correct');
+$('h1').removeClass('correct');
