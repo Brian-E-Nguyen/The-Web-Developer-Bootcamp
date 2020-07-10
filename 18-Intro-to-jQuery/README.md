@@ -196,3 +196,22 @@ You can also pass something into this method.
 ![img3](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/18-Intro-to-jQuery/18-Intro-to-jQuery/images-for-notes/img3.jpg?raw=true)
 
 One practical use of this is when someone enters in the input, you would then use `val()` to clear the input
+
+## 7. Manipulating Classes
+
+The methods for manipulating classes are
+
+- `addClass()`
+- `removeClass()`
+- `toggleClass()`
+
+
+```js
+$( "p" ).addClass( "myClass yourClass" );
+```
+
+![img4](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/18-Intro-to-jQuery/18-Intro-to-jQuery/images-for-notes/img4.jpg?raw=true)
+
+![img5](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/18-Intro-to-jQuery/18-Intro-to-jQuery/images-for-notes/img5.jpg?raw=true)
+
+![img6](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/18-Intro-to-jQuery/18-Intro-to-jQuery/images-for-notes/img6.jpg?raw=true)
