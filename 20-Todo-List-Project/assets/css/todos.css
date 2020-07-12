@@ -1,3 +1,10 @@
-body {
-    background-color: purple;
+#container {
+    background-color: gray;
+    width: 360px;
+    /* 
+    Set the top and bottom margin to be 0,
+    and the left and right margin to be auto. This will
+    make the page responsive
+     */
+    margin: 0 auto;
 }
