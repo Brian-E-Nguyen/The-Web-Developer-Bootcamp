@@ -1,5 +1,5 @@
 #container {
-    background-color: gray;
+    border: 2px solid gray;
     width: 360px;
     /* 
     Set the top and bottom margin to be 0,
@@ -7,4 +7,9 @@
     make the page responsive
      */
     margin: 0 auto;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
 }
