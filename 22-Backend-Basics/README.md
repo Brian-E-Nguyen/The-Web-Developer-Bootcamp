@@ -50,3 +50,24 @@ The blue line represents the boundary between frontend and backend
 ![img4](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/22-Backend-Basics/22-Backend-Basics/img-for-notes/img4.jpg?raw=true)
 
 ![img5](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/22-Backend-Basics/22-Backend-Basics/img-for-notes/img5.jpg?raw=true)
+
+## 2. HTTP in Depth
+
+### 2.1 HTTP Verbs
+
+The most common ones are
+
+- GET - Retrieving information
+- POST - Creating information
+- PUT - Updating information
+- DELETE - Deleting information
+
+There are two important parts in every response
+
+1. The __body__ of the response. That's like the payload of the response that is beign sent back (HTML, CSS, JS)
+
+![img6](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/22-Backend-Basics/22-Backend-Basics/img-for-notes/img6.jpg?raw=true)
+
+2. The __headers__ of the response. The most important ones are _content-type_ and _status code_
+
+![img7](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/22-Backend-Basics/22-Backend-Basics/img-for-notes/img7.jpg?raw=true)
