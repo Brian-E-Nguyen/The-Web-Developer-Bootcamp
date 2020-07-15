@@ -64,7 +64,7 @@ The most common ones are
 
 There are two important parts in every response
 
-1. The __body__ of the response. That's like the payload of the response that is beign sent back (HTML, CSS, JS)
+1. The __body__ of the response. That's like the payload of the response that is being sent back (HTML, CSS, JS)
 
 ![img6](https://github.com/Brian-E-Nguyen/The-Web-Developer-Bootcamp/blob/22-Backend-Basics/22-Backend-Basics/img-for-notes/img6.jpg?raw=true)
 
