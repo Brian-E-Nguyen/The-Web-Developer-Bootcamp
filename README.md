@@ -1,6 +1,6 @@
 # The-Web-Developer-Bootcamp
 
-A course by __Colt Steele__ on Udemy to learn web development. The code in this repository is to document what I have learned so far.
+A course by __Colt Steele__ on Udemy to learn web development. Everything in this repository documents what I have learned so far.
 
 ## Content
 
@@ -9,7 +9,6 @@ Some of the content that will be in this repository:
 - JavaScript
 - DOM Manipulation
 - jQuery
-- Unix Commands
 - Node JS
 - NPM
 - REST
