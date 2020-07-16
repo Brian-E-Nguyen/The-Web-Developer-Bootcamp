@@ -53,3 +53,19 @@ average(scores); // return 94
 var scores2 = [40, 65, 77, 82, 80, 54, 73, 63, 95, 49];
 average(scores2); // return 68
 ```
+
+## 4. Intro to NPM
+
+- Define NPM
+- Explain why NPM is awesome
+- What packages we will be using
+
+### 4.1 Intro to NPM
+
+Node Package Manager (NPM) is a tool to add open source JavaScript libraries to your project
+
+### 4.2 Installing and Using NPM
+
+In your terminal, use `npm install <package name>` to install a package
+
+In your JavaScript file, use `require()` to include a package
