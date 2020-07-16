@@ -69,3 +69,13 @@ Node Package Manager (NPM) is a tool to add open source JavaScript libraries to 
 In your terminal, use `npm install <package name>` to install a package
 
 In your JavaScript file, use `require()` to include a package
+
+### 4.3 Faker Excercise
+
+- Create a new directory "MyShop"
+- Add a file named "listProducts.js"
+- Install "faker" package
+- Read the Faker docs and figure out how it works
+- Use Faker to print out 10 random product names and prices
+- Run your file with node and make sure it works!
+
