@@ -15,3 +15,11 @@ All of the control flow is already in the framework, and there's a bunch of pred
 Express is a web development framework. We are using it because:
 - It's the most popular Node framework
 - It's a lightweight framework, where we do most of the work. We have the freedom of how to do things
+
+## 2. Package.json
+
+The `package.json` file contains all of the metadata about a framework. It contains dependencies, contributors, versions, etc.
+
+The `--save` takes the package name and version and automatically saves it into the `package.json` file if we have one
+
+Using `npm init` creates a new `package.json` file
