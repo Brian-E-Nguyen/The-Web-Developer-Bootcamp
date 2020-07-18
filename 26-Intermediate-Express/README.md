@@ -38,3 +38,17 @@ There are two different types of tags
 `<%= %>` means that the returned code will be added to the HTML
 
 `<% %>` means that only logic will be performed. It will not be added to the HTML
+
+## 3. Styles and Partials
+
+- Show how to properly include public assets
+- Properly configure our app to use EJS
+- Use partials to dry up our code
+
+To add partials to an EJS file use the following syntax:
+
+`<%- include("partials/header") %>`
+
+Express will not serve every content of a project unless you tell it to. To do this, use the following syntax:
+
+`app.use(express.static('public'));`
