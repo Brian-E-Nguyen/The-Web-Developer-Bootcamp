@@ -21,5 +21,7 @@ What will NOT be in this repository now, but may be added in the future are cont
 - CSS3
 - Bootstrap 4
 
+Note that Section #23 - Command Line is skipped. This is not a mistake
+
 ## Link to Course
 https://www.udemy.com/course/the-web-developer-bootcamp/
