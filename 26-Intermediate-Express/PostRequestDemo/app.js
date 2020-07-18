@@ -1,6 +1,10 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser')
 const portNumber = 1193;
+var friends = ['Brian', 'Mike', 'Chester', 'Lily'];
+
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.set('view engine', 'ejs');
 
@@ -9,12 +13,12 @@ app.get('/', function(req, res) {
 });
 
 app.post('/addFriend', function(req, res) {
-    console.log(req.body);
-    res.send('You have reached the post route')
+    var newFriend = req.body.newfriend;
+    friends.push(newFriend);
+    res.redirect('/friends')
 });
 
 app.get('/friends', function(req, res){
-    var friends = ['Brian', 'Mike', 'Chester', 'Lily'];
     res.render('friends', {friendsVar: friends});
   });
 
