@@ -2,8 +2,14 @@ var express = require('express');
 var app = express();
 const portNumber = 1193;
 
+// Tells express to serve the contents of the 'public' folder
+app.use(express.static('public'));
+
+// Files are expected to be .ejs files
+app.set('view engine', 'ejs');
+
 app.get('/', function(req, res) {
-    res.render('home.ejs');
+    res.render('home');
 });
 
 app.get('/posts', function(req, res) {
@@ -13,12 +19,12 @@ app.get('/posts', function(req, res) {
         {title: 'Poms Are the Best', author: 'Brian'},
     ];
 
-    res.render('posts.ejs', {posts: posts})
+    res.render('posts', {posts: posts})
 })
 
 app.get('/fallinlovewith/:thing', function(req, res) {
     var thing = req.params.thing;
-    res.render('love.ejs', {thingVar: thing});
+    res.render('love', {thingVar: thing});
 });
 
 app.listen(portNumber, function() {
