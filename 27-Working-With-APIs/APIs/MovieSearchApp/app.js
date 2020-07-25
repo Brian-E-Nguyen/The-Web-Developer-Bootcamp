@@ -1,13 +1,19 @@
-var express = require('express')
+var express = require('express');
 var app = express();
-var axios = require('axios')
+var axios = require('axios');
 const portNumber = 1193;
 
+app.set('view engine', 'ejs');
+
+app.get('/', function(req, res) {
+    res.render('search')
+})
+
 app.get('/results', function(req, res) {
-    axios.get('http://www.omdbapi.com/?s=guardians+of+the+galaxy&apikey=thewdb')
+    var query = req.query.search;
+    axios.get(`http://www.omdbapi.com/?s=${query}&apikey=thewdb`)
     .then(function(response) {
-        res.send(response.data.Search);
-        console.log(response.data.Search);
+        res.render('results', {data: response.data});
     })
     .catch(function(error){
         console.log(error)
