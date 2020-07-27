@@ -89,3 +89,68 @@ How it's also more flexible is that we can add attributes that don't have to mat
 One person could have `favoriteColor` while another can have `favoriteFood`.
 
 It is more flexible, but that doesn't mean it's better than SQL. In fact, it's worse in most cases
+
+## 2. Intro to Mongo
+
+Mongo is the most popular NoSQL database in Node.js
+
+### 2.1 Mongo Commands
+
+- mongod - starts mongo demon
+- mongo - opens mongo shell
+- help - shows a list of the basic commands of mongo
+- show dbs - shows databases
+- use `<db name>` - selects a database to use, just like MySQL. If a database doesn't exist, it will create the database and then use it
+
+__CRUD__
+- insert
+- find
+- update
+- remove
+
+#### 2.1.1 Create
+```
+db.dogs.insert()
+```
+
+- `db` refers to the CURRENT database that we are on
+- `dogs` is the collection that doesn't exist yet
+- `insert` inserts data
+
+
+```
+db.dogs.insert({name: "Rusty", breed: "Mutt"})
+```
+
+#### 2.1.2 Read
+`db.dogs.find()` returns this:
+
+```
+{ "_id" : ObjectId("5f1f1f62f59fdf7290c51608"), "name" : "Rusty", "breed" : "Mutt" }
+```
+
+What if we want to search by attribute? We use the `find()` method and pass in a parameter
+
+#### 2.1.3 Update
+
+```
+db.dogs.update({name: "Mimi"}, {breed: "Lab"} )
+```
+
+__NOTE:__ this will update the breed where name is Mimi, but since we didn't pass in a name parameter, it will be overwritten when we update
+
+`$set` will preserve attributes that aren't specified
+```
+db.dogs.update({name: "Mimi"}, {$set: {name: "Mimi", isCute: true}} )
+```
+
+```
+{ "_id" : ObjectId("5f1f1f62f59fdf7290c51608"), "name" : "Rusty", "breed" : "Mutt" }
+{ "_id" : ObjectId("5f1f254e820e0ff3900829f4"), "name" : "Lucy", "breed" : "Mutt" }
+{ "_id" : ObjectId("5f1f25b2820e0ff3900829f5"), "name" : "Mimi", "breed" : "Pom", "isCute" : true }
+```
+
+#### 2.1.4 Destroy
+```
+db.dogs.remove({breed: "Mutt"} )
+```
