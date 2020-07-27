@@ -154,3 +154,10 @@ db.dogs.update({name: "Mimi"}, {$set: {name: "Mimi", isCute: true}} )
 ```
 db.dogs.remove({breed: "Mutt"} )
 ```
+
+Removes all data where breed is "Mutt"
+
+## 3. Mongoose
+
+### 3.1 What is Mongoose? Why Are We Using It?
+Mongoose is a tool that helps us interact with the DB using our JavaScript files
